@@ -43,3 +43,9 @@ services:
       TZ: 'Asia/Tokyo'
     volumes:
       - mysql-volume:/var/lib/mysql
+
+  mailcatcher:
+    image: schickling/mailcatcher
+    container_name: test_mailcatcher
+    ports:
+      - "1080:1080"
