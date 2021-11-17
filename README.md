@@ -1,6 +1,6 @@
 # 構築手順
 
-1. .env.exampleを.envに変更
+1. .env.exampleを.envに変更 <br />
 環境変数を利用できるようにするために、.env.exampleを.envにファイル名を更新する。<br />
 
 2. docker環境の構築
