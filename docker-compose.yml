@@ -2,6 +2,7 @@ version: '3.9'
 
 volumes:
   mysql-volume:
+  minio:
 
 services:
   app:
@@ -49,3 +50,12 @@ services:
     container_name: test_mailcatcher
     ports:
       - "1080:1080"
+
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: test
+      MINIO_SECRET_KEY: test
+    command: server /export
