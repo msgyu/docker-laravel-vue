@@ -56,6 +56,6 @@ services:
     ports:
       - "9000:9000"
     environment:
-      MINIO_ACCESS_KEY: test_access_key
-      MINIO_SECRET_KEY: test_secret_key
+      MINIO_ROOT_USER: minio            
+      MINIO_ROOT_PASSWORD: miniosecret  
     command: server /export
