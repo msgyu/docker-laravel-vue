@@ -50,6 +50,7 @@ services:
     container_name: test_mailcatcher
     ports:
       - "1080:1080"
+      - "1025:1025"
 
   minio:
     image: minio/minio
