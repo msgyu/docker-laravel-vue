@@ -11,6 +11,14 @@
 |
 */
 
+// サブドメイン（上でないと"/"が利用できない）
+Route::domain('test.laravel.test')->group(function () {
+    Route::get('/', function () {
+        return "ok";
+    });
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 });
